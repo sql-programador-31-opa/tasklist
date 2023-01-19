@@ -29,6 +29,7 @@ class addtask : AppCompatActivity() {
             startActivity(Intent(this, MainActivity::class.java ))
 
         }
+        binding.cancel.setOnClickListener { startActivity(Intent(this, MainActivity::class.java )) }
 
     }
     fun createTask(room:DBMASTER,task: task) {
