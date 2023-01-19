@@ -63,6 +63,7 @@ class MainActivity : AppCompatActivity(),AdaptadorListener {
     fun updatetask(room: DBMASTER,task: task){
     lifecycleScope.launch {
         room.daoTask().updateTask(task.id,task.nombre, task.descripcion,task.fechat,task.progreso)
+        adaptador.notifyDataSetChanged()
         getTask(room)
         clearcampos()
         binding.cardedit.visibility = View.INVISIBLE
