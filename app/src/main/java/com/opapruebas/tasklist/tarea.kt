@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 import java.sql.Time
 
 @Entity(tableName = "Task")
-data class task (
+data class task(
     @ColumnInfo(name = "nombre") var nombre:String,
     @ColumnInfo(name = "descripcion") var descripcion:String,
     @ColumnInfo(name = "fechat") var fechat:Long = 0,

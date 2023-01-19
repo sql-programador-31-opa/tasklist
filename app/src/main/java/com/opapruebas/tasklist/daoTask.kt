@@ -15,9 +15,10 @@ interface daoTask {
     suspend fun addTask(task: task)
 
     @Query("UPDATE task set nombre = :nombre, descripcion = :descripcion, fechat = :fechat, progreso = :progreso WHERE id = :id")
-    suspend fun updateTask(id: Int, nombre:String, descripcion:String,fechat:Long, progreso:Int, )
+    suspend fun updateTask(id: Int, nombre:String, descripcion:String,fechat:Long, progreso:Int )
 
     @Query("DELETE FROM task WHERE id= :id")
     suspend fun deleteTask(id:Int)
+
 
 }

@@ -31,6 +31,7 @@ class adaptadorTask (
         holder.cronotimercount.base = task.fechat
         val progreso = task.progreso.toString()
         holder.tvprogreso.text = "$progreso %"
+
         holder.cvrv.setOnClickListener {
             listener.onEditItemClick(task)
         }

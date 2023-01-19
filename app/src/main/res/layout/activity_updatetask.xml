@@ -8,6 +8,7 @@
 
 
     <EditText
+        android:id="@+id/ettitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25dp"
@@ -39,19 +40,20 @@
         tools:layout_editor_absoluteY="253dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/etdescripcion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text="Editar descripcion"
         tools:layout_editor_absoluteX="68dp"
         tools:layout_editor_absoluteY="292dp" />
 
     <SeekBar
-        android:id="@+id/seekBar"
+        android:id="@+id/progressbar"
         android:layout_width="205dp"
         android:layout_height="63dp"
+        android:progress="0"
         tools:layout_editor_absoluteX="68dp"
         tools:layout_editor_absoluteY="404dp" />
 
@@ -62,6 +64,14 @@
         android:text="Progreso"
         tools:layout_editor_absoluteX="70dp"
         tools:layout_editor_absoluteY="368dp" />
+
+    <Button
+        android:id="@+id/btnactu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="489dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
