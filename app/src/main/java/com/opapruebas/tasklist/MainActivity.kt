@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity(),AdaptadorListener {
         setContentView(binding.root)
         room = Room.databaseBuilder(this, DBMASTER::class.java,"DBMASTER").build()
         getTask(room)
+
         binding.agregartarea.setOnClickListener(){
             startActivity(Intent(this, addtask::class.java ))
         }
@@ -92,6 +93,8 @@ class MainActivity : AppCompatActivity(),AdaptadorListener {
             getTask(room)
         }
     }
+
+
 
 }
 

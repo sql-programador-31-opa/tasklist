@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Chronometer
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.view.menu.MenuView
@@ -32,6 +33,7 @@ class adaptadorTask (
         val progreso = task.progreso.toString()
         holder.tvprogreso.text = "$progreso %"
 
+
         holder.cvrv.setOnClickListener {
             listener.onEditItemClick(task)
         }
@@ -39,6 +41,8 @@ class adaptadorTask (
         holder.btnborrar.setOnClickListener {
             listener.onDeleteItemClick(task)
         }
+
+
 
     }
 
@@ -53,5 +57,6 @@ class adaptadorTask (
         val cronotimercount= itemView.findViewById<Chronometer>(R.id.cronotimercount)
         val btnborrar = itemView.findViewById<Button>(R.id.btnborrar)
         val tvprogreso =itemView.findViewById<TextView>(R.id.tvprogreso)
+
     }
 }

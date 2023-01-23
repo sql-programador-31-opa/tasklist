@@ -65,6 +65,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="110dp"
             android:layout_marginStart="190dp"
+            android:format="H:MM:SS"
+
             />
 
         <ImageView
